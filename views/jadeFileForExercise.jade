@@ -1,0 +1,33 @@
+extends layout
+block content
+   h3 #{introText}
+
+    table
+        thead
+            tr
+                th id
+                th name
+                th age
+                th eye color
+                th gender
+                th email
+        tbody
+            - each member in members
+                tr
+                    td= member.id
+                    td= member.name
+                    td= member.age
+                    td= member.eyeColor
+                    td= member.gender
+                    td= member.email
+
+
+
+
+
+
+
+
+
+   a(href="/") Back
+
